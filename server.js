@@ -9,6 +9,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/game.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'puzzle', 'game.html'));
+});
+
 app.get('/xyz.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'xyz.html'));
 });
@@ -21,7 +25,7 @@ app.get('/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/ui/mison.jpg', function (req, res) {
+app.get('/mison.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'mison.jpg'));
 });
 
