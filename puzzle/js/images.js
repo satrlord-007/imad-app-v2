@@ -1,5 +1,5 @@
 define('images', function() {
 	return [
-		'img/madi.png'
+		'mison.jpg'
 	];
 });
