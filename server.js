@@ -13,6 +13,14 @@ app.get('/game.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'puzzle', 'game.html'));
 });
 
+app.get('/define.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'puzzle', 'js', 'define.js'));
+});
+
+app.get('/game.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'puzzle', 'css', 'game.css'));
+});
+
 app.get('/xyz.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'xyz.html'));
 });
