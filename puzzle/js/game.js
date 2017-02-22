@@ -53,7 +53,7 @@ define('game', [ 'require', 'prefix' ], function(require) {
 	}
 
 	function load(game, img, opts) {
-		var board = game.board, loader = new Image;
+		var board = game.board, loader = new Image();
 		game.isLoading = true;
 		game.onLoad = [];
 		board.classList.add('is-loading');
