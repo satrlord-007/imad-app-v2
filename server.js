@@ -1,12 +1,18 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var counter;
 
 var app = express();
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
+  counter=counter+1;
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('/counter', function (req, res) {
+  res.send(counter.toString());
 });
 
 app.get('/game.html', function (req, res) {
