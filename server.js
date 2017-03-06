@@ -24,7 +24,7 @@ app.get('/define.js', function (req, res) {
 });
 
 app.get('/main', function (req, res) {
-  res.sendFile(path.join(__dirname, 'puzzle', 'main.js'));
+  res.sendFile(path.join(__dirname, 'puzzle', 'js', 'main.js'));
 });
 
 app.get('/game.css', function (req, res) {
@@ -32,15 +32,15 @@ app.get('/game.css', function (req, res) {
 });
 
 app.get('/game.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'puzzle', 'game.js'));
+  res.sendFile(path.join(__dirname, 'puzzle', 'js', 'game.js'));
 });
 
 app.get('/images.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'puzzle', 'images.js'));
+  res.sendFile(path.join(__dirname, 'puzzle', 'js', 'images.js'));
 });
 
 app.get('/prefix.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'puzzle', 'prefix.js'));
+  res.sendFile(path.join(__dirname, 'puzzle', 'js', 'prefix.js'));
 });
 
 app.get('/style.css', function (req, res) {
