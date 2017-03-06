@@ -43,6 +43,10 @@ app.get('/prefix.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'puzzle', 'js', 'prefix.js'));
 });
 
+app.get('/gator.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'puzzle', 'img', 'gator.jpg'));
+});
+
 app.get('/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
