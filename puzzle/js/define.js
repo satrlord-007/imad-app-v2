@@ -136,7 +136,8 @@
 
 			var script;
 			map(function(node) {
-				if (canonicalize(node.src) === module.uri) { script = node; }
+				if (canonicalize(node.src) === module.uri) 
+				    { script = node; }
 			}, doc.getElementsByTagName('script'));
 
 			if (!script) {
