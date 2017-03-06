@@ -36,7 +36,7 @@ app.get('/game.js', function (req, res) {
 });
 
 app.get('/images.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'puzzle', 'images.html'));
+  res.sendFile(path.join(__dirname, 'puzzle', 'images.js'));
 });
 
 app.get('/prefix.js', function (req, res) {
