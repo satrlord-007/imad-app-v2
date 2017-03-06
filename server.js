@@ -15,7 +15,7 @@ app.get('/counter', function (req, res) {
   res.send(counter.toString());
 });
 
-app.get('/game.html', function (req, res) {
+app.get('/game', function (req, res) {
   res.sendFile(path.join(__dirname, 'puzzle', 'game.html'));
 });
 
